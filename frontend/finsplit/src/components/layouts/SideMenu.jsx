@@ -48,7 +48,7 @@ const SideMenu = ({activeMenu}) => {
       {SIDE_MENU_DATA.map((item, index) => (
         <button 
         key={`menu_${index}`}
-        className={`flex items-center gap-4 w-full text-[15px] ${activeMenu === item.label ? "text-white bg-primary" :""} py-3 px-6 rounded-lg mb-3`}
+        className={`flex items-center gap-4 w-full text-[15px] ${activeMenu === item.label ? "text-white bg-primary" :""} py-3 px-6 rounded-lg mb-3 transition hover:bg-primary/80 hover:text-white hover:scale-[1.03]`}
         onClick={() => handleClick(item.path)}
         >
 

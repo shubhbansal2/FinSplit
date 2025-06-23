@@ -11,6 +11,8 @@ import SignUp from './pages/Auth/SignUp';
 import Home from './pages/Dashboard/Home.jsx';
 import Income from './pages/Dashboard/Income';
 import Expense from './pages/Dashboard/Expense';
+import BillBuddy from './pages/Dashboard/BillBuddy';
+import BillBuddyGroup from './pages/Dashboard/BillBuddyGroup';
 import UserProvider from './context/UserContext';
 
 const App = () => {
@@ -25,6 +27,8 @@ const App = () => {
             <Route path='/dashboard' exact element={<Home />}/>
             <Route path='/income' exact element={<Income />}/>
             <Route path='/expense' exact element={<Expense />}/>
+            <Route path='/billbuddy' exact element={<BillBuddy />}/>
+            <Route path='/billbuddy/group/:groupId' element={<BillBuddyGroup />} />
           </Routes>
         </Router>
       </div>
